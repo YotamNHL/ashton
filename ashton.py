@@ -77,6 +77,7 @@ class Ashton(object):
             instance_scaled = possible_neighbors_and_instance_scaled.iloc[-1, :]
             dists = [euclidean(instance_scaled, possible_neighbors_scaled.iloc[i]) for i in range(possible_neighbors_scaled.shape[0])]
             closet_obs = self.X.iloc[np.argmin(dists)]
+            # TODO: Nothing
             print(closet_obs)
 
 
